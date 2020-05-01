@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+    body {
+        color: red
+    }
+</style>
+
+<head>
+    <title>Electron + WebGPU + Napi Crash Repro</title>
+</head>
+
+<body>
+    Click the canvas to initialize
+    <canvas id="renderCanvas" width="400" height="400" style="border: 1px solid #ff0000"></canvas>
+    <script defer src='renderer.js' type="module"></script>
+</body>
+
+</html>

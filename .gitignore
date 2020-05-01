@@ -1,0 +1,6 @@
+dist/
+build/
+node_modules/
+public/glslang.wasm
+public/glslang-*.js
+public/renderer.js
