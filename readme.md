@@ -8,7 +8,7 @@
 * WebGPU has a method device.createBufferMapped
 * This method returns an array containing a GPUBuffer and ArrayBuffer
 * If you update this ArrayBuffer on the js side, it works as expected
-* If you try to access this returned ArrayBuffer, you crash in napi_get_arraybuffer_info after a few iterations
+* If you try to access this returned ArrayBuffer on the node addon side, you crash in napi_get_arraybuffer_info after a few iterations
 * Note there's a bug in the rollup-plugin-native plugin on windows such that you need to fix the path to the copy_to_webgpu_arraybuffer.node file at the top of renderer.js to use forward slashes after running `yarn run build`
 * WebGPU code is in ./src/renderer.js
 * Node addon code is in ./src/interface.cpp
