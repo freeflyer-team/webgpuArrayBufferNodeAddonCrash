@@ -25,7 +25,7 @@ export default [
                 browser: false,
             }),
             native({
-                platformName: "${dirname}/../build/Debug/copy_to_webgpu_arraybuffer.node"
+                platformName: "${dirname}/../build/Release/copy_to_webgpu_arraybuffer.node"
             })
         ]
     }
